@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>접지 안정화 운동</title>
 <meta property="og:title" content="접지 안정화 운동">
 <meta property="og:description" content="평발·족저근막염 발 운동, 6단계 영상으로 따라 하기 (60초 × 3세트)">
 <meta property="og:image" content="https://okhyun304-dot.github.io/foot-grounding-exercise/clips/slide.jpg">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>접지 안정화 운동</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
@@ -68,16 +68,23 @@ ol.do small{display:block;color:var(--soft);font-size:14px;margin-top:2px}
 details.src{border-top:1px solid var(--line);padding-top:12px;color:var(--soft);font-size:14px}
 details.src summary{cursor:pointer;font-weight:500}
 details.src ul{padding-left:18px;margin:8px 0 0}
+.series{display:flex;flex-wrap:wrap;gap:6px}
+.series a{font-size:13px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--soft);text-decoration:none}
+.series a[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.series a:focus-visible,.next-ex:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.next-ex{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border-radius:12px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700}
+.next-ex small{display:block;font-weight:500;opacity:.85;font-size:13px}
 </style>
 </head>
 <body>
-
 <div class="wrap">
   <header>
-    <div class="eyebrow">평발 · 족저근막염 발 운동</div>
+    <div class="eyebrow">평발 · 족저근막염 운동 1</div>
     <h1>접지 안정화</h1>
+    
     <div class="dose"><span class="pill">60초 유지</span><span class="pill">3세트</span></div>
     <p class="note">영상을 누르면 소리와 자막이 함께 나옵니다. 개인 경험을 바탕으로 한 자료이며, 통증이 계속되면 진료를 받아 보세요.</p>
+    <nav class="series" aria-label="운동 순서"><a href="./" aria-current="page">1. 접지 안정화</a><a href="2/">2. 내전근 활성화</a><a href="3/">3. 발목·고관절 굴곡</a></nav>
   </header>
 
   <figure class="slide">
@@ -92,17 +99,13 @@ details.src ul{padding-left:18px;margin:8px 0 0}
     <video controls playsinline preload="none" poster="clips/full.jpg"><source src="clips/full.mp4" type="video/mp4"></video>
   </section>
 
+  <a class="next-ex" href="2/"><span><small>다음 운동</small>2. 내전근 활성화</span><span aria-hidden="true">→</span></a>
+
   <details class="src">
     <summary>자료와 영상 출처</summary>
-    <ul>
-      <li>운동 자료 3/14쪽 「접지 안정화 [60초 3세트]」의 6단계를 기준으로 했습니다.</li>
-      <li>단계별 영상은 직접 촬영한 시연 영상(3분 18초)에서 잘랐고, 자막은 촬영 중 설명을 다듬은 것입니다.</li>
-      <li>자료는 누워서 하는 자세이고, 영상은 앉아서 촬영했습니다. 발 동작은 같습니다.</li>
-      <li>영상에서는 공 대신 휴지 상자를 무릎 사이에 끼웠습니다.</li>
-    </ul>
+    <ul><li>운동 자료 3/14쪽 「접지 안정화 [60초 3세트]」의 6단계를 기준으로 했습니다.</li><li>단계별 영상은 직접 촬영한 시연 영상(3분 18초)에서 잘랐고, 자막은 촬영 중 설명을 다듬은 것입니다.</li><li>자료는 누워서 하는 자세이고, 영상은 앉아서 촬영했습니다. 발 동작은 같습니다.</li><li>영상에서는 공 대신 휴지 상자를 무릎 사이에 끼웠습니다.</li><li><span class="k">${k+1}</span><div><strong>${esc(d[0])}</strong>${d[1]?`<small>${esc(d[1])}</small>`:""}</div></li></ul>
   </details>
 </div>
-
 
 <script>
 const STEPS = [
