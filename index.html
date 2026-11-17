@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:title" content="접지 안정화 운동">
 <meta property="og:description" content="평발·족저근막염 발 운동, 6단계 영상으로 따라 하기 (60초 × 3세트)">
-<meta property="og:image" content="clips/s4-big.jpg">
+<meta property="og:image" content="https://okhyun304-dot.github.io/foot-grounding-exercise/clips/slide.jpg">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>접지 안정화 운동</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
 <style>
-/* 레이아웃: 한 화면에 한 단계. 위 단계 탭 → 영상 → 따라 하기 → 확인/주의 → 아래 이전·다음 */
+/* 레이아웃: 한 줄로 쭉 내려 읽기. 자료 이미지 → 01~06 단계(영상·순서·확인·주의) 차례로 */
 :root{
   --bg:#f3f4f1; --paper:#ffffff; --ink:#1d2421; --soft:#5f6a65; --line:#dde2de;
   --accent:#1f6b4f; --accent-ink:#ffffff; --accent-soft:#e7f1ec;
@@ -29,7 +29,7 @@
   --warn:#e3a75a; --warn-soft:#2e2619; --chip:#26302b; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.6;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 96px}
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
 .wrap{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
 header{padding-top:20px;display:flex;flex-direction:column;gap:6px}
 .eyebrow{font-size:12px;letter-spacing:.08em;color:var(--soft);font-weight:500}
@@ -37,14 +37,6 @@ h1{margin:0;font-size:26px;font-weight:800;line-height:1.3;text-wrap:balance}
 .dose{display:inline-flex;gap:8px;flex-wrap:wrap}
 .pill{font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
 .note{font-size:13px;color:var(--soft);margin:0}
-nav.tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
-nav.tabs a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 2px;border:1px solid var(--line);
-  border-radius:10px;background:var(--paper);color:var(--ink);text-decoration:none;min-width:0}
-nav.tabs b{font-size:17px;font-variant-numeric:tabular-nums}
-nav.tabs span{font-size:11px;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
-nav.tabs a[aria-current="step"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-nav.tabs a[aria-current="step"] span{color:var(--accent-ink)}
-nav.tabs a:focus-visible,.bar a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .step{display:flex;flex-direction:column;gap:16px}
 .step-head{display:flex;gap:12px;align-items:baseline}
 .step-head .n{font-size:30px;font-weight:300;color:var(--accent);font-variant-numeric:tabular-nums}
@@ -54,6 +46,12 @@ video{display:block;width:100%;max-width:100%;aspect-ratio:16/9;background:#000;
 .cap{font-size:13px;color:var(--soft);margin:-8px 0 0}
 details.more{border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:10px 14px}
 details.more summary{cursor:pointer;font-weight:700;font-size:15px}
+summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+figure.slide{margin:0;display:flex;flex-direction:column;gap:6px}
+figure.slide img{display:block;width:100%;border-radius:12px;border:1px solid var(--line);background:#fff}
+figure.slide figcaption{font-size:13px;color:var(--soft)}
+.step{padding-top:28px;border-top:1px solid var(--line)}
+.steps{display:flex;flex-direction:column;gap:28px}
 details.more video{margin-top:10px}
 ol.do{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
 ol.do li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
@@ -70,15 +68,6 @@ ol.do small{display:block;color:var(--soft);font-size:14px;margin-top:2px}
 details.src{border-top:1px solid var(--line);padding-top:12px;color:var(--soft);font-size:14px}
 details.src summary{cursor:pointer;font-weight:500}
 details.src ul{padding-left:18px;margin:8px 0 0}
-.bar{position:fixed;left:0;right:0;bottom:0;background:var(--paper);border-top:1px solid var(--line);
-  padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
-.bar .in{max-width:680px;margin:0 auto;display:flex;align-items:center;gap:10px}
-.bar a{flex:1;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:700;font-size:15px}
-.bar .prev{border:1px solid var(--line);color:var(--ink);background:var(--paper)}
-.bar .next{background:var(--accent);color:var(--accent-ink)}
-.bar .pos{font-size:13px;color:var(--soft);font-variant-numeric:tabular-nums;min-width:40px;text-align:center}
-.bar a[aria-disabled="true"]{visibility:hidden}
-@media (prefers-reduced-motion:no-preference){.step{animation:in .2s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1}}}
 </style>
 </head>
 <body>
@@ -91,8 +80,11 @@ details.src ul{padding-left:18px;margin:8px 0 0}
     <p class="note">영상을 누르면 소리와 자막이 함께 나옵니다. 개인 경험을 바탕으로 한 자료이며, 통증이 계속되면 진료를 받아 보세요.</p>
   </header>
 
-  <nav class="tabs" id="tabs" aria-label="단계"></nav>
-  <main id="stage"></main>
+  <figure class="slide">
+    <img src="clips/slide.jpg" alt="운동 자료: 접지 안정화 60초 3세트. 누워서 무릎 사이에 공을 끼운 자세 사진과 6단계 설명" width="1166" height="872">
+    <figcaption>운동 자료 3/14쪽 · 아래에서 단계별 영상으로 하나씩 따라 합니다</figcaption>
+  </figure>
+  <main class="steps" id="stage"></main>
 
   <details class="src">
     <summary>자료와 영상 출처</summary>
@@ -105,11 +97,6 @@ details.src ul{padding-left:18px;margin:8px 0 0}
   </details>
 </div>
 
-<div class="bar"><div class="in">
-  <a class="prev" id="prev" href="#">← 이전</a>
-  <span class="pos" id="pos"></span>
-  <a class="next" id="next" href="#">다음 단계 →</a>
-</div></div>
 
 <script>
 const STEPS = [
@@ -165,12 +152,7 @@ const $ = s => document.querySelector(s);
 const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const vid = (name) => `<video controls playsinline preload="none" poster="clips/${name}.jpg"><source src="clips/${name}.mp4" type="video/mp4"></video>`;
 
-$("#tabs").innerHTML = STEPS.map((s,i)=>`<a href="#${s.id}" data-i="${i}"><b>${String(i+1).padStart(2,"0")}</b><span>${s.tab}</span></a>`).join("");
-
-function render(i){
-  const s = STEPS[i];
-  document.querySelectorAll("video").forEach(v=>v.pause());
-  $("#stage").innerHTML = `<section class="step" aria-labelledby="h-${s.id}">
+$("#stage").innerHTML = STEPS.map((s,i)=>`<section class="step" id="${s.id}" aria-labelledby="h-${s.id}">
     <div class="step-head"><span class="n">${String(i+1).padStart(2,"0")}</span>
       <div><h2 id="h-${s.id}">${esc(s.title)}</h2><p>${esc(s.sub)}</p></div></div>
     ${vid(s.video)}
@@ -179,22 +161,9 @@ function render(i){
     <ol class="do">${s.doing.map((d,k)=>`<li><span class="k">${k+1}</span><div><strong>${esc(d[0])}</strong>${d[1]?`<small>${esc(d[1])}</small>`:""}</div></li>`).join("")}</ol>
     <div class="check"><h3>다음 단계 전 확인</h3><p>${esc(s.check)}</p></div>
     <div class="avoid"><h3>주의</h3><p>${esc(s.avoid)}</p></div>
-  </section>`;
-  document.querySelectorAll("#tabs a").forEach((a,k)=>a.toggleAttribute("aria-current",false) || (k===i && a.setAttribute("aria-current","step")));
-  const prev=$("#prev"), next=$("#next");
-  prev.href = i>0 ? "#"+STEPS[i-1].id : "#"; prev.setAttribute("aria-disabled", i===0);
-  if(i<STEPS.length-1){ next.href="#"+STEPS[i+1].id; next.textContent="다음 단계 →"; }
-  else { next.href="#"+STEPS[0].id; next.textContent="처음으로 ↺"; }
-  $("#pos").textContent = `${i+1} / ${STEPS.length}`;
-}
-function route(scroll){
-  const id = location.hash.slice(1);
-  const i = Math.max(0, STEPS.findIndex(s=>s.id===id));
-  render(i);
-  if(scroll) $("#tabs").scrollIntoView({block:"start", behavior:"auto"});
-}
-addEventListener("hashchange", ()=>route(true));
-route(false);
+  </section>`).join("");
+// 영상 하나를 재생하면 다른 영상은 멈춤
+document.addEventListener("play", e => document.querySelectorAll("video").forEach(v => v !== e.target && v.pause()), true);
 </script>
 </body>
 </html>
